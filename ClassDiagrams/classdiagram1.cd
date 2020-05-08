@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EFCoreBasic.Garden">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAQQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Beds" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFCoreBasic.Bed">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <AssociationLine Name="CropAssignments" Type="EFCoreBasic.CropAssignment" FixedFromPoint="true">
+      <Path>
+        <Point X="7.5" Y="2.375" />
+        <Point X="9" Y="2.375" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAEAAAAAAACAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Model.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="CropAssignments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFCoreBasic.Crop">
+    <Position X="12.25" Y="1.75" Width="1.5" />
+    <AssociationLine Name="CropAssignments" Type="EFCoreBasic.CropAssignment" FixedFromPoint="true">
+      <Path>
+        <Point X="12.25" Y="2.375" />
+        <Point X="10.75" Y="2.375" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.227" Y="0.026" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAACAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Model.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="CropAssignments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFCoreBasic.CropAssignment">
+    <Position X="9" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAABAAAAAgAAAEAA=</HashCode>
+      <FileName>Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

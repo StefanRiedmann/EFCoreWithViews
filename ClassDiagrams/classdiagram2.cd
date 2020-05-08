@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EFCoreBasic.GardenContext">
+    <Position X="1" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAQAAAAAAAAAAAEAQECAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EFCoreBasic.Garden">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAQQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Beds" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFCoreBasic.Bed">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAEAAAAAAACAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Model.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="CropAssignments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFCoreBasic.Crop">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <AssociationLine Name="CropAssignments" Type="EFCoreBasic.CropAssignment" FixedFromPoint="true">
+      <Path>
+        <Point X="9.688" Y="4.5" />
+        <Point X="9.688" Y="3.43" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.38" Y="0.154" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAACAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Model.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="CropAssignments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFCoreBasic.CropAssignment">
+    <Position X="9" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAABAAAAAgAAAEAA=</HashCode>
+      <FileName>Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EFCoreBasic.GardenInfo">
+    <Position X="3.5" Y="4.5" Width="1.5" />
+    <AssociationLine Name="Garden" Type="EFCoreBasic.Garden" FixedFromPoint="true">
+      <Path>
+        <Point X="4.062" Y="4.5" />
+        <Point X="4.062" Y="3.046" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.1" Y="0.143" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAABAAAAAEAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Garden" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
